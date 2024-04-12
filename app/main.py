@@ -9,8 +9,8 @@ name = "sujin"
 
 @app.get("/")
 def read_root():
-    print(name)
-    return 0
+    #print(name)
+    return {"name" : name}
 
 @app.post("/")
 def create_root():
@@ -18,7 +18,6 @@ def create_root():
 
 @app.put("/")
 def update_root():
-    name = input("type name")
     return 0
 
 @app.delete("/")
