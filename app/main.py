@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-name: "sujin"
+name = "sujin"
 
 @app.get("/")
 def read_root():
